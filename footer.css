@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #010103;
+}
+
+footer.wrapper-footer {
+  width: 100%;
+  margin: 100px auto;
+}
+
+section.footer-info {
+  margin: auto;
+  width: 1330px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 64px;
+}
+
+footer.wrapper-footer svg {
+  width: 16px;
+}
+
+.one-footer-box {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.one-footer-box .footer-title {
+  font-size: 24px;
+}
+
+.one-footer-box .footer-title span {
+  font-weight: 700;
+}
+
+.footer-contact-us {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-contact-us p.phone-number,
+.footer-contact-us p.email {
+  font-weight: 500;
+}
+
+.footer-contact-us p.author {
+  font-size: 14px;
+}
+
+p.phone-number,
+p.email {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+p.footer-describe {
+  font-size: 16px;
+  color: rgb(112, 111, 123);
+}
+
+.one-footer-box .list-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.one-footer-box .input-register {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.one-footer-box a.footer-btn-submit {
+  padding: 15px 30px;
+  text-align: center;
+  background-color: #ff4d30;
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.25);
+  font-size: 16px;
+  border-radius: 3px;
+  color: white;
+  font-weight: 600;
+}
+
+.one-footer-box a.footer-btn-submit:hover {
+  box-shadow: 0 10px 15px 0 rgba(255, 83, 48, 0.4);
+}
+
+.one-footer-box input {
+  padding: 10px 0;
+  border-color: transparent;
+}
+
+.one-footer-box input {
+  --fa-style-family-brands: "Font Awesome 6 Brands";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  list-style: none;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #ececec;
+  border-color: transparent;
+  border-width: 1px;
+  font-family: Rubik, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-top: 1rem;
+  outline: none;
+  padding: 10px 60px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+/* car banner  */
+section.banner {
+  width: 100%;
+  height: 200px;
+  background-image: url("./book-banner.png");
+  /* background-size: contain; */
+  /* background-position: center; */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.banner .banner-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #2d2d2d;
+  opacity: 0.89;
+}
+
+section.banner .banner-info {
+  display: flex;
+  gap: 64px;
+}
+
+section.banner .banner-info p {
+  position: relative;
+  z-index: 99;
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+section.banner p.phone-number {
+  color: #ff4d30;
+}
+
+section.banner svg {
+  width: 32px;
+  fill: #ff4d30;
+}
+
+/* --------  */
+
+@media (max-width: 1400px) {
+  section.footer-info {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1100px) {
+  section.footer-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  section.footer-info {
+    width: 85%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .one-footer-box {
+    align-items: center;
+  }
+
+  .one-footer-box * {
+    text-align: center;
+  }
+
+  .one-footer-box .input-register {
+    width: 100%;
+  }
+}
+
+@media (max-width: 920px) {
+  section.banner .banner-info {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .banner-describe {
+    text-align: center;
+  }
+
+  .banner-info {
+    width: 80%;
+  }
+}
